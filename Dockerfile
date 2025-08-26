@@ -14,5 +14,3 @@ COPY --from=builder /app/stress_test_challenge .
 
 RUN apk add --no-cache ca-certificates
 ENTRYPOINT ["./stress_test_challenge"]
-
-docker run stress_test —url=http://google.com —requests=100 —concurrency=10
